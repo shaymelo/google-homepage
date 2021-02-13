@@ -4,8 +4,8 @@ html, body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
+    font-size: 14px;
 }
-
 
 .all {
     flex: 1;
@@ -13,6 +13,7 @@ html, body {
     flex-direction:column;
     min-height: 100vh;
     justify-content: center;
+
 }
 
 /* navbar */
@@ -21,10 +22,50 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid black;
-    padding: 10px;
+    align-items: center;
+    align-content: center;
+    padding:6px;
+    height: 60px;
+
 }
 
+.navContainer a {
+    color: rgba(0,0,0,0.87);
+}
+
+.navContainer a:hover {
+    text-decoration: underline;
+}
+
+.topLeft {
+    margin-left: 15px;
+}
+.topLeft a {
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+.topRight a {
+    vertical-align: middle;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+
+.Layer_1 {
+    width: 17px;
+    height: 17px;
+    fill:#5f6368;
+}
+
+.profile {
+    width: 32px;
+    border-radius: 50%;
+
+}
 
 /* center */
 
@@ -59,6 +100,10 @@ html, body {
     
 }
 
+.searchContainer:hover {
+    box-shadow: 0px 0px 10px rgb(197, 197, 197);
+}
+
 
 .searchLogo svg {
     width:20px;
@@ -84,6 +129,8 @@ html, body {
     outline:none;
 }
 
+
+
 .searchMic svg {
     width:22px;
     height:22px;
@@ -93,13 +140,17 @@ html, body {
 }
 
 .buttons button{
-
-    background-color: #f2f2f2;
+    background-color: #f8f9fa;
     border: none;
     font-size: 14px;
     font-family: arial, sans-serif;
     padding: 10px;
     margin: 11px 4px;
+    border-radius: 4px;
+}
+
+.buttons button:hover {
+    box-shadow: 0px 0px 0px 1px rgb(230, 230, 230), 0px 2px 3px 0px rgb(197, 197, 197);
 }
 
 
@@ -114,12 +165,17 @@ html, body {
     align-content: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 1px solid black;
     background-color: #f2f2f2;
     height: 40px;
-
 }
 
+.footerContainer a {
+    color: #70757a
+}
+
+.footerContainer a:hover {
+    text-decoration: underline;
+}
 
 
 .footerLeft a {
