@@ -1,0 +1,155 @@
+html, body {
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+
+.all {
+    flex: 1;
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+/* navbar */
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+/* center */
+
+.centerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.logo {
+    width: 270px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+/* search */
+
+.searchContainer {
+
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 45px;
+    max-width: 600px;
+    width: 90%;
+    margin-bottom: 20px;
+    
+}
+
+
+.searchLogo svg {
+    width:20px;
+    height:20px;
+    fill: rgb(163, 163, 163);
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 3px;
+
+}
+
+.inputArea {
+    width: 100%;
+    max-width: 600px;
+}
+.inp {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+}
+
+.inp:not(:hover), .inp:hover {
+    outline:none;
+}
+
+.searchMic svg {
+    width:22px;
+    height:22px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.buttons button{
+
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    padding: 10px;
+    margin: 11px 4px;
+}
+
+
+
+
+
+/* footer */
+
+.footerContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    background-color: #f2f2f2;
+    height: 40px;
+
+}
+
+
+
+.footerLeft a {
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.footerRight a {
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+@media (max-width: 650px) {
+    .footerContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+    }
+
+    .footerRight {
+        margin: 10px;
+    }
+
+    .footerLeft {
+        margin: 10px;
+    }
+}
